@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="maindiv">
+        <div id="navdiv">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/jewelry-diamond-logo-white-and-yellow-colors-design-template-0fdd7146d8e3cab095f5f183289602bb_screen.jpg?ts=1597399430"
+                alt="">
+            <p style="margin-left: 30%;">Cartier Jeweller's</p>
+            <a style="margin-left: 3%;" href="">Login</a>
+            <a style="margin-left: 3%;" href="">Sign up</a>
+            <button style="margin-left: 3%;" onclick="redirectProduct()">View Products</button>
+            <button style="margin-left: 3%;" onclick="redirectCart()">View Cart</button>
+        </div>
+        <div id="paymentdiv">
+            <h3 style="text-align: center;">Payment Options</h3>
+            <a href="https://pay.google.com/">
+                <img src="https://pay.google.com/about/static_kcs/images/logos/footer-logo.svg" alt="">
+            </a>
+            <a href="https://www.phonepe.com/">
+                <img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMzIgNDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZT4uc3Qwe2ZpbGw6IzVmMjU5Zn08L3N0eWxlPjxjaXJjbGUgdHJhbnNmb3JtPSJyb3RhdGUoLTc2LjcxNCAxNy44NyAyNC4wMDEpIiBjbGFzcz0ic3QwIiBjeD0iMTcuOSIgY3k9IjI0IiByPSIxNy45Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTkwLjUgMzQuMnYtNi41YzAtMS42LS42LTIuNC0yLjEtMi40LS42IDAtMS4zLjEtMS43LjJWMzVjMCAuMy0uMy42LS42LjZoLTIuM2MtLjMgMC0uNi0uMy0uNi0uNlYyMy45YzAtLjQuMy0uNy42LS44IDEuNS0uNSAzLS44IDQuNi0uOCAzLjYgMCA1LjYgMS45IDUuNiA1LjR2Ny40YzAgLjMtLjMuNi0uNi42SDkyYy0uOSAwLTEuNS0uNy0xLjUtMS41em05LTMuOWwtLjEuOWMwIDEuMi44IDEuOSAyLjEgMS45IDEgMCAxLjktLjMgMi45LS44LjEgMCAuMi0uMS4zLS4xLjIgMCAuMy4xLjQuMi4xLjEuMy40LjMuNC4yLjMuNC43LjQgMSAwIC41LS4zIDEtLjcgMS4yLTEuMS42LTIuNC45LTMuOC45LTEuNiAwLTIuOS0uNC0zLjktMS4yLTEtLjktMS42LTIuMS0xLjYtMy42di0zLjljMC0zLjEgMi01IDUuNC01IDMuMyAwIDUuMiAxLjggNS4yIDV2Mi40YzAgLjMtLjMuNi0uNi42aC02LjN6bS0uMS0yLjJIMTAzLjJ2LTFjMC0xLjItLjctMi0xLjktMnMtMS45LjctMS45IDJ2MXptMjUuNSAyLjJsLS4xLjljMCAxLjIuOCAxLjkgMi4xIDEuOSAxIDAgMS45LS4zIDIuOS0uOC4xIDAgLjItLjEuMy0uMS4yIDAgLjMuMS40LjIuMS4xLjMuNC4zLjQuMi4zLjQuNy40IDEgMCAuNS0uMyAxLS43IDEuMi0xLjEuNi0yLjQuOS0zLjguOS0xLjYgMC0yLjktLjQtMy45LTEuMi0xLS45LTEuNi0yLjEtMS42LTMuNnYtMy45YzAtMy4xIDItNSA1LjQtNSAzLjMgMCA1LjIgMS44IDUuMiA1djIuNGMwIC4zLS4zLjYtLjYuNmgtNi4zem0tLjEtMi4ySDEyOC42di0xYzAtMS4yLS43LTItMS45LTJzLTEuOS43LTEuOSAydjF6TTY2IDM1LjdoMS40Yy4zIDAgLjYtLjMuNi0uNnYtNy40YzAtMy40LTEuOC01LjQtNC44LTUuNC0uOSAwLTEuOS4yLTIuNS40VjE5YzAtLjgtLjctMS41LTEuNS0xLjVoLTEuNGMtLjMgMC0uNi4zLS42LjZ2MTdjMCAuMy4zLjYuNi42aDIuM2MuMyAwIC42LS4zLjYtLjZ2LTkuNGMuNS0uMiAxLjItLjMgMS43LS4zIDEuNSAwIDIuMS43IDIuMSAyLjR2Ni41Yy4xLjcuNyAxLjQgMS41IDEuNHptMTUuMS04LjRWMzFjMCAzLjEtMi4xIDUtNS42IDUtMy40IDAtNS42LTEuOS01LjYtNXYtMy43YzAtMy4xIDIuMS01IDUuNi01IDMuNSAwIDUuNiAxLjkgNS42IDV6bS0zLjUgMGMwLTEuMi0uNy0yLTItMnMtMiAuNy0yIDJWMzFjMCAxLjIuNyAxLjkgMiAxLjlzMi0uNyAyLTEuOXYtMy43em0tMjIuMy0xLjdjMCAzLjItMi40IDUuNC01LjYgNS40LS44IDAtMS41LS4xLTIuMi0uNHY0LjVjMCAuMy0uMy42LS42LjZoLTIuM2MtLjMgMC0uNi0uMy0uNi0uNlYxOS4yYzAtLjQuMy0uNy42LS44IDEuNS0uNSAzLS44IDQuNi0uOCAzLjYgMCA2LjEgMi4yIDYuMSA1LjZ2Mi40ek01MS43IDIzYzAtMS42LTEuMS0yLjQtMi42LTIuNC0uOSAwLTEuNS4zLTEuNS4zdjYuNmMuNi4zLjkuNCAxLjYuNCAxLjUgMCAyLjYtLjkgMi42LTIuNFYyM3ptNjguMiAyLjZjMCAzLjItMi40IDUuNC01LjYgNS40LS44IDAtMS41LS4xLTIuMi0uNHY0LjVjMCAuMy0uMy42LS42LjZoLTIuM2MtLjMgMC0uNi0uMy0uNi0uNlYxOS4yYzAtLjQuMy0uNy42LS44IDEuNS0uNSAzLS44IDQuNi0uOCAzLjYgMCA2LjEgMi4yIDYuMSA1LjZ2Mi40em0tMy42LTIuNmMwLTEuNi0xLjEtMi40LTIuNi0yLjQtLjkgMC0xLjUuMy0xLjUuM3Y2LjZjLjYuMy45LjQgMS42LjQgMS41IDAgMi42LS45IDIuNi0yLjRWMjN6Ii8+PHBhdGggZD0iTTI2IDE5LjNjMC0uNy0uNi0xLjMtMS4zLTEuM2gtMi40bC01LjUtNi4zYy0uNS0uNi0xLjMtLjgtMi4xLS42bC0xLjkuNmMtLjMuMS0uNC41LS4yLjdsNiA1LjdIOS41Yy0uMyAwLS41LjItLjUuNXYxYzAgLjcuNiAxLjMgMS4zIDEuM2gxLjR2NC44YzAgMy42IDEuOSA1LjcgNS4xIDUuNyAxIDAgMS44LS4xIDIuOC0uNXYzLjJjMCAuOS43IDEuNiAxLjYgMS42aDEuNGMuMyAwIC42LS4zLjYtLjZWMjAuOGgyLjNjLjMgMCAuNS0uMi41LS41di0xem0tNi40IDguNmMtLjYuMy0xLjQuNC0yIC40LTEuNiAwLTIuNC0uOC0yLjQtMi42di00LjhoNC40djd6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="">
+            </a>
+            <a href="https://www.amazon.in/amazonpay/home">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAolBMVEUzPkj////4mBwdLDjFx8r/nBgsOEP9mhowPUhjanAqO0kbKjcuOkQjMT3/nhckOUkZNkrukx+ytbg7RU/u7+9CTFXn6On09fUAGioRJDKipqqwdTFJUVqcoKSorK+4u75wdnzW2NmKj5R7gYZRWmJBREaXaTd1WT7Cfi1gUEFOSUQAMEzgjCTOhCm5eS9aYmkAECQAAB2mcDWCXzsAM0pqVEBvqraRAAAD+UlEQVRoge2WC3OqOBSAI5AQCTHBB0h9AoKPC7ar9f//tT0JaOvenXutze7M7uSbadGY4cs5OSeAkMVisVgsFovFYrFYLBaL5X9LSP/yPfxnfZy56h+ZT1y3U1HOGJpvRsylegIjt9lMzTYBKVbDES+ycZLEywnXQ5Pci+H7OF6OCOKL1aq4ikdDmG3E63q9Xp71WsZ9JSZJ70o8JwwmJNN2Ml/AHCNa7YUbx543VuI5pHoE18zzvBgGPE76cOm3AbuwwCU35x3Op2mavsCnFWwfWfRd9X06hAXNwzBuh6HUJjBjbqbelNeb6ntNV9oD6Wyjoww0ryHPYZjpCoOVZWbCbb1tjZJX8BQftYvSRGWYjuCyVsMcIi/Me6kLgqX+zBnkmb+N9c66q3aKWleSmtF+9qKp2kkG1lHuZZm3LHS8KFR5GIXIhf0eGmrfO28K5eoxxPKPRtKVzGA8h/zCsjamTrG7eDMVL1mrhvKWwyzuvKqyMqIaKjOV5vt4YT9fXFU92ShlLJ0mXee6qn/SVRu1cW84V/XMVZNudFWnVy8D5YLDqkztbudts8egPZOJ7qb2t7erN9xACtZt0Rn0Jrnrcp6u9XmlD6U1I4S7+e2EhEpP4ttxacoL5/8wX6gPySTUp0OSb/qLuHfzqsqCWebC1d742jTJK9SNruf2aZTdQuSqtcxVVbe/E093rDfRErcYa+ti+jIedw3rLttkmPWmHG36G8S7+3KyKYo54fCuc337cV+MVtWtj2hIyKcXLMLJfWws7p4Nhr2/gRfqxDKofcQLHTWK1cHx73rpylNlF5t5n3vci+LeRyMbg+SeV/zylmSpWmxzzTIFTIjvXsv/Fvftj7e0Le9AvtOyLOV78LRPyC8vO5DbY+Qo6u2zYtnsyi+ag200GGDAcXD9/qQ32PrO6WvmsmmOp+pczSLHf9qLxL4eRKeDfDxhlAoJCLnF/k4+60WibDCOjvtAPBw0TN1WKLhgXImnvXCXk+P7uDmX4hE1FeJQ1XhwkRX2988XNCD3NXZ87Gh18As3DZS08bGPT4FocPR8mjWBWrsDalzPLgj27mc5KKVE21mNYSaO9pKW0bfS3CLoUZnBPcDR7rQ9iB/v8sb7D3E4VzvoHzUHOxUcGOKMo29luYtHlke4owbihkXUze44A467pu6G9G9RFagwZYO33w5Xm0V5qnVAnf0T1zEM5Yd09QWXwembu/vJjC7HqAvsJ6Dw6tPh2m50fzYSbWcORHmZNZF/J4cuA2dT7an42FFqUNuqJbjPs6aOAAf+YKOh0JAUBsrod251FApUHg6HkkrdWEaetg/qqamnu8VisVgsFovFYrFYLBaL5T/An70pSSjFQHhdAAAAAElFTkSuQmCC" alt="">
+            </a>
+            <a href="https://paytm.com/">
+                <img src="data:image/png;base64,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" alt="">
+            </a>
+            <button onclick="netbank()">Net Banking</button>
+            <button onclick="cardpay()">Credit/Debit Card</button> <br> <br> <br>
+            <input type="text" placeholder="Enter Card Number"> <br> <br>
+            <input type="text" placeholder="Card Holder's Name"> <br> <br>
+            <input type="text" placeholder="Valid through"> <br> <br>
+            <input type="password" placeholder="CVV">
+            <button onclick="redirectSuccess()">Checkout</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="payments.js"></script>

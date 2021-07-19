@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="maindiv">
+        <div id="navdiv">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/jewelry-diamond-logo-white-and-yellow-colors-design-template-0fdd7146d8e3cab095f5f183289602bb_screen.jpg?ts=1597399430" alt="">
+            <p>Cartier Jeweller's</p>
+            
+            <a href="">Login</a>
+            <a href="">Sign up</a>
+            <button onclick="redirectCart()">View Cart</button>
+        </div>
+        <div id="productouter">
+            <div id="featuresdiv">
+                <h2>Have a look at our Stunning Designs!</h2>
+                <button onclick="sortltoh()">Sort - Price:Low to High</button>
+                <button onclick="sorthtol()">Sort - Price:High to Low</button>
+                <select name="" id="byprice">
+                    <option value="">Filter by Price</option>
+                    <option id="0to5000" value="">0-₹5000</option>
+                    <option id="5kto10k" value="">₹5000-₹10000</option>
+                    <option id="10kplus" value="">₹10000 and above</option>
+                </select>
+                <select name="" id="bycategory">
+                    <option value="">Filter by Category</option>
+                    <option id="bracelet" value="">Bracelets</option>
+                    <option id="ring" value="">Rings</option>
+                    <option id="anklet" value="">Anklets</option>
+                    <option id="chain" value="">Chains</option>
+                    <option id="earring" value="">Earrings</option>
+                </select>
+            </div>            
+            <div id="productsdiv"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="product.js"></script>
